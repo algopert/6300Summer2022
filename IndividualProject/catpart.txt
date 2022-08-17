@@ -1,0 +1,58 @@
+#   OPTIONS
+
+Edit file input File:
+  -f.                               [property EditInPlace]
+  none.                             [property Not_F]
+
+Output to FileName:
+  -o <none>.                        [error]
+  -o <outfilename>.                 [if EditInPlace][error][else][property EditOutFile]
+  -o <alreadyExist>.                [error]
+  none.                             [if !EditInPlace][property Stdout, Not_O]
+
+Replace:
+  -r <none>.                        [error]
+  -r <oneParam>.                    [error]
+  -r <old> <new>.                   [property Replace]
+  none.                             [property Not_R]
+
+Insensitive:
+  -i.                               [if Replace][property Insensitive][else][error]
+  none.                             [property Not_I]
+
+Prefix:
+  -p <none>.                        [error]
+  -p <prefix>.                      [property Prefix]
+  none.                             [property Not_P]
+
+Duplicate:
+  -d <none>.                        [error]
+  -d <out of range>.                [error]
+  -d <none integer>.                [error]
+  -d <n>.                           [property Duplicate]
+  none.                             [property Not_D]
+
+Cipher:
+  -c <none>.                        [error]
+  -c <n>.                           [if Replace][error][else][property Cipher]
+  -c <none integer>.                [error]
+  -c <out of range>.                [error]
+  none.                             [property Not_C]
+
+Omitted:
+  error.                         [if Not_C && Not_D && Not_F && Not_I && Not_O && Not_P && Not_R]
+
+
+Input File:
+  edited.                           [if EditInPlace]
+  not edited.                       [if !EditInPlace]
+
+STDOUT:
+  stdout.                           [if Stdout]
+  empty.                            [if !Stdout]
+
+FILEOUT:
+  outputed.                         [if EditOutFile]
+
+
+

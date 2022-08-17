@@ -1,0 +1,728 @@
+
+Test Case 1  		<error>
+   Output to FileName :  -o <none>
+
+
+Test Case 2  		<error>  (follows [if])
+   Output to FileName :  -o <outfilename>
+
+
+Test Case 3  		<error>
+   Output to FileName :  -o <alreadyExist>
+
+
+Test Case 4  		<error>
+   Replace :  -r <none>
+
+
+Test Case 5  		<error>
+   Replace :  -r <oneParam>
+
+
+Test Case 6  		<error>  (follows [else])
+   Insensitive :  -i
+
+
+Test Case 7  		<error>
+   Prefix :  -p <none>
+
+
+Test Case 8  		<error>
+   Duplicate :  -d <none>
+
+
+Test Case 9  		<error>
+   Duplicate :  -d <out of range>
+
+
+Test Case 10 		<error>
+   Duplicate :  -d <none integer>
+
+
+Test Case 11 		<error>
+   Cipher :  -c <none>
+
+
+Test Case 12 		<error>  (follows [if])
+   Cipher :  -c <n>
+
+
+Test Case 13 		<error>
+   Cipher :  -c <none integer>
+
+
+Test Case 14 		<error>
+   Cipher :  -c <out of range>
+
+
+Test Case 15 		(Key = 1.0.3.1.2.4.5.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  -r <old> <new>
+   Insensitive          :  -i
+   Prefix               :  -p <prefix>
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 16 		(Key = 1.0.3.1.2.5.5.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  -r <old> <new>
+   Insensitive          :  -i
+   Prefix               :  -p <prefix>
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 17 		(Key = 1.0.3.1.3.4.5.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  -r <old> <new>
+   Insensitive          :  -i
+   Prefix               :  none
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 18 		(Key = 1.0.3.1.3.5.5.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  -r <old> <new>
+   Insensitive          :  -i
+   Prefix               :  none
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 19 		(Key = 1.0.3.2.2.4.5.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  -r <old> <new>
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 20 		(Key = 1.0.3.2.2.5.5.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  -r <old> <new>
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 21 		(Key = 1.0.3.2.3.4.5.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  -r <old> <new>
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 22 		(Key = 1.0.3.2.3.5.5.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  -r <old> <new>
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 23 		(Key = 1.0.4.2.2.4.2.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  -d <n>
+   Cipher               :  -c <n>
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 24 		(Key = 1.0.4.2.2.4.5.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 25 		(Key = 1.0.4.2.2.5.2.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  none
+   Cipher               :  -c <n>
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 26 		(Key = 1.0.4.2.2.5.5.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 27 		(Key = 1.0.4.2.3.4.2.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  -d <n>
+   Cipher               :  -c <n>
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 28 		(Key = 1.0.4.2.3.4.5.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 29 		(Key = 1.0.4.2.3.5.2.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  none
+   Cipher               :  -c <n>
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 30 		(Key = 1.0.4.2.3.5.5.0.1.2.0.)
+   Edit file input File :  -f
+   Output to FileName   :  <n/a>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  edited
+   STDOUT               :  empty
+   FILEOUT              :  <n/a>
+
+
+Test Case 31 		(Key = 2.2.3.1.2.4.5.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  -r <old> <new>
+   Insensitive          :  -i
+   Prefix               :  -p <prefix>
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 32 		(Key = 2.2.3.1.2.5.5.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  -r <old> <new>
+   Insensitive          :  -i
+   Prefix               :  -p <prefix>
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 33 		(Key = 2.2.3.1.3.4.5.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  -r <old> <new>
+   Insensitive          :  -i
+   Prefix               :  none
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 34 		(Key = 2.2.3.1.3.5.5.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  -r <old> <new>
+   Insensitive          :  -i
+   Prefix               :  none
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 35 		(Key = 2.2.3.2.2.4.5.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  -r <old> <new>
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 36 		(Key = 2.2.3.2.2.5.5.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  -r <old> <new>
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 37 		(Key = 2.2.3.2.3.4.5.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  -r <old> <new>
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 38 		(Key = 2.2.3.2.3.5.5.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  -r <old> <new>
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 39 		(Key = 2.2.4.2.2.4.2.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  -d <n>
+   Cipher               :  -c <n>
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 40 		(Key = 2.2.4.2.2.4.5.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 41 		(Key = 2.2.4.2.2.5.2.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  none
+   Cipher               :  -c <n>
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 42 		(Key = 2.2.4.2.2.5.5.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 43 		(Key = 2.2.4.2.3.4.2.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  -d <n>
+   Cipher               :  -c <n>
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 44 		(Key = 2.2.4.2.3.4.5.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 45 		(Key = 2.2.4.2.3.5.2.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  none
+   Cipher               :  -c <n>
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 46 		(Key = 2.2.4.2.3.5.5.0.2.2.1.)
+   Edit file input File :  none
+   Output to FileName   :  -o <outfilename>
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  empty
+   FILEOUT              :  outputed
+
+
+Test Case 47 		(Key = 2.4.3.1.2.4.5.0.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  -r <old> <new>
+   Insensitive          :  -i
+   Prefix               :  -p <prefix>
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
+
+Test Case 48 		(Key = 2.4.3.1.2.5.5.0.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  -r <old> <new>
+   Insensitive          :  -i
+   Prefix               :  -p <prefix>
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
+
+Test Case 49 		(Key = 2.4.3.1.3.4.5.0.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  -r <old> <new>
+   Insensitive          :  -i
+   Prefix               :  none
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
+
+Test Case 50 		(Key = 2.4.3.1.3.5.5.0.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  -r <old> <new>
+   Insensitive          :  -i
+   Prefix               :  none
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
+
+Test Case 51 		(Key = 2.4.3.2.2.4.5.0.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  -r <old> <new>
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
+
+Test Case 52 		(Key = 2.4.3.2.2.5.5.0.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  -r <old> <new>
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
+
+Test Case 53 		(Key = 2.4.3.2.3.4.5.0.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  -r <old> <new>
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
+
+Test Case 54 		(Key = 2.4.3.2.3.5.5.0.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  -r <old> <new>
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
+
+Test Case 55 		(Key = 2.4.4.2.2.4.2.0.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  -d <n>
+   Cipher               :  -c <n>
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
+
+Test Case 56 		(Key = 2.4.4.2.2.4.5.0.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
+
+Test Case 57 		(Key = 2.4.4.2.2.5.2.0.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  none
+   Cipher               :  -c <n>
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
+
+Test Case 58 		(Key = 2.4.4.2.2.5.5.0.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  -p <prefix>
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
+
+Test Case 59 		(Key = 2.4.4.2.3.4.2.0.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  -d <n>
+   Cipher               :  -c <n>
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
+
+Test Case 60 		(Key = 2.4.4.2.3.4.5.0.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  -d <n>
+   Cipher               :  none
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
+
+Test Case 61 		(Key = 2.4.4.2.3.5.2.0.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  none
+   Cipher               :  -c <n>
+   Omitted              :  <n/a>
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
+
+Test Case 62 		(Key = 2.4.4.2.3.5.5.1.2.1.0.)
+   Edit file input File :  none
+   Output to FileName   :  none
+   Replace              :  none
+   Insensitive          :  none
+   Prefix               :  none
+   Duplicate            :  none
+   Cipher               :  none
+   Omitted              :  error
+   Input File           :  not edited
+   STDOUT               :  stdout
+   FILEOUT              :  <n/a>
+
